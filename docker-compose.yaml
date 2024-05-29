@@ -33,7 +33,7 @@ services:
         networks:
                 - flask_network
     db:
-        image: mysql:5.7
+        image: mariadb:10.5.8
         restart: always
         container_name: flask_db
         ports:
